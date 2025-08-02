@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Card.css";
 
 export default function Increase() {
   const [counter, setCounter] = useState(0);
@@ -18,7 +19,7 @@ export default function Increase() {
   };
 
   return (
-    <div>
+    <div className="card">
       <p>Counter is: {counter}</p>
       <button onClick={handleClick}>Увеличить</button>
     </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Card.css";
 
 export default function DoubleWatcher() {
   const [counterOne, setCounterOne] = useState(0);
@@ -13,7 +14,7 @@ export default function DoubleWatcher() {
   }, [counterTwo]);
 
   return (
-    <div>
+    <div className="card">
       <p>First: {counterOne}</p>
       <button onClick={() => setCounterOne(counterOne + 1)}>+1 to first</button>
       <p>Second: {counterTwo}</p>

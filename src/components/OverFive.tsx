@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Card.css";
 
 export default function OverFive() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ export default function OverFive() {
     setCount(count + 1);
   };
   return (
-    <div>
+    <div className="card">
       <p>{count}</p>
       <button onClick={handleClick}>Увеличить</button>
     </div>

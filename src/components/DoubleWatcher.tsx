@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 
 export default function DoubleWatcher() {
   const [counterOne, setCounterOne] = useState(0);

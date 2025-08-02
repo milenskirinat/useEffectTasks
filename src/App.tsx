@@ -19,11 +19,6 @@ function App() {
           <DoubleWatcher />
           <SumTitle />
         </div>
-        <div className="flex flex-col gap-4 items-start">
-          <h2 className="self-start sticky top-0 text-2xl">
-            Second part of tasks
-          </h2>
-        </div>
       </div>
     </>
   );
